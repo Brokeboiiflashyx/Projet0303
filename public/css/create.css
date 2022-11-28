@@ -1,0 +1,26 @@
+
+label, input {
+    font-family: "Inter", sans-serif;
+  }
+label, textarea{
+    font-family: "Inter", sans-serif;
+}
+
+.btn-creer{
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+    color: white;
+    font-weight: 600;
+    width: 12%;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .btn-creer:hover {
+    box-shadow: 0 0 40px 40px #ff7551 inset;
+  }
+.creer{
+width: 50%;
+padding-left: 35%;
+}
+
+
+
