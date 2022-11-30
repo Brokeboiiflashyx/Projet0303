@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\user_ticket;
 
 use App\Models\Tickets;
 
@@ -20,9 +21,12 @@ class TicketsController extends Controller
     {
         // Stocker dans une variable les données de la table tickets
 
-        $tickets = Tickets::with("user_id")->get();
-
+        $tickets = user_ticket::all();
         return view('tickets.index',['tickets' => $tickets]);
+        // corriger l'erreur d'affichage
+
+
+
     }
 
     /**
@@ -53,8 +57,9 @@ class TicketsController extends Controller
         $ticket->Description = $request->Description;
         $ticket->Statut ='En cours';
         $ticket->save();
-        // dans ma table ticket_user ajouter les clef etrangeres ticket_id et user_id
+
         $ticket->users()->attach(Auth::user()->id);
+
 
         return redirect()->route('tickets.show', ['ticket' => $ticket]);
     }

@@ -10,6 +10,7 @@
             <th id="titre">Date de creation </th>
         </thead>
         <tbody>
+
             <tr ng-repeat="data in information | filter:search">
                 <td></td>
                 <td>{{ $ticket->Titre }}</td>
@@ -24,7 +25,6 @@
                 <td>{{ $ticket->created_at }}</td>
 
             </tr>
-
 
         </tbody>
     @endsection

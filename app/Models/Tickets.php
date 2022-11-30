@@ -11,8 +11,12 @@ class Tickets extends Model
 
 public function users()
 {
-    return $this->belongsToMany(User::class, 'user_ticket');
+    return $this->belongsToMany(User::class, 'user_tickets');
 }
 
+public function user_ticket()
+{
+    return $this->belongsToMany(user_tickets::class);
+}
 }
 
