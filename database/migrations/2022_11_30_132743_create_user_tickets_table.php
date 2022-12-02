@@ -23,14 +23,7 @@ return new class extends Migration
             $table->foreign('tickets_id')->references('id')->on('tickets')->onDelete('cascade');
         });
 
-        // Schema::create('user_ticket', function (Blueprint $table) {
-        //     $table->id();
-        //     $table->unsignedBigInteger('user_id');
-        //     $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-        //     $table->unsignedBigInteger('tickets_id');
-        //     $table->foreign('tickets_id')->references('id')->on('tickets')->onDelete('cascade');
-        //     $table->timestamps();
-        // });
+
     }
 
     /**

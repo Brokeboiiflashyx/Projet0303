@@ -15,10 +15,10 @@ class user_ticket extends Model
 ];
 public function users()
 {
-    return $this->HasMany(User::class, 'id');
+    return $this->BelongsTo(User::class, 'id');
 }
 public function tickets()
 {
-    return $this->HasMany(Tickets::class, 'id');
+    return $this->BelongsTo(Tickets::class, 'id');
 }
 }

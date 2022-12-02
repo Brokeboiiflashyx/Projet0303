@@ -32,3 +32,4 @@ Route::get('/destroy/{id}', [TicketsController::class, 'destroy'])->name('destro
 
 
 
+

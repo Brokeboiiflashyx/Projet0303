@@ -5,12 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/64d58efce2.js" crossorigin="anonymous"></script>
+
     <link href="{{ asset('css/dashboard.css') }}" rel="stylesheet">
     <link href="{{ asset('css/create.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://vjs.zencdn.net/5-unsafe/video-js.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+
+
 
     <title>TICKETPLUS</title>
 </head>
@@ -83,6 +87,7 @@
             <div class="main-container">
                 @yield('contenu')
             </div>
+        </div>
 </body>
 
 </html>

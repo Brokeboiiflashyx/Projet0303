@@ -51,7 +51,9 @@
                             class="glyphicon glyphicon-send"></span></button>
                 </div>
             </div>
-
+            <div>
+                <a href="{{ route('tickets.index') }}" class="btn-primary">Chat</a>
+            </div>
         </fieldset>
         </div>
     </form>

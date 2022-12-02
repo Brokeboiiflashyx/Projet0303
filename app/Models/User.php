@@ -64,10 +64,18 @@ class User extends Authenticatable
 
     public function tickets()
     {
-        return $this->belongsToMany(Tickets::class, 'user_tickets');
+        return $this->belongsToMany(Tickets::class, 'id');
     }
     public function roles()
     {
         return $this->hasOne(Role::class);
     }
+    public function user_ticket()
+    {
+        return $this->belongsToMany(user_tickets::class);
+    }
+    public function allowsConfig()
+{
+    return $this->user_id == 'Admin' || $this->type == 'Mod';
+}
 }

@@ -21,7 +21,7 @@ class TicketsController extends Controller
     {
         // Stocker dans une variable les données de la table tickets
 
-        $tickets = user_ticket::all();
+        $tickets = Tickets::all();
         return view('tickets.index',['tickets' => $tickets]);
         // corriger l'erreur d'affichage
 
