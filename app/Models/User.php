@@ -74,8 +74,8 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(user_tickets::class);
     }
-    public function allowsConfig()
+public function getRoleIdAttribute()
 {
-    return $this->user_id == 'Admin' || $this->type == 'Mod';
+    return $this->id;
 }
 }

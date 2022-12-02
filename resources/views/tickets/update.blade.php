@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div>
-                <a href="{{ route('tickets.index') }}" class="btn-primary">Chat</a>
+                <a href="{{ route('chatify') }}" class="btn-primary">Chat</a>
             </div>
         </fieldset>
         </div>
